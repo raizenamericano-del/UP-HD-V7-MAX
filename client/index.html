@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5" />
+    <meta name="theme-color" content="#0e0a06" />
+    <meta name="color-scheme" content="dark" />
+    <meta
+      name="description"
+      content="JernihHD oleh Rifky — unggah & kirim video HD anti pecah ke WhatsApp, TikTok, IG Reels/Story, dan YT Shorts. Privasi per perangkat, mesin encode HD sendiri."
+    />
+    <meta name="keywords" content="Upload HD, Jernih HD, Status HD, WhatsApp Status, TikTok HD, IG Reels HD, kompres video HD, JernihHD, Rifky" />
+
+    <!-- PWA / install sebagai app -->
+    <meta name="application-name" content="JernihHD" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="JernihHD" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="JernihHD" />
+    <meta property="og:title" content="JernihHD — Semua Video Jadi Jernih" />
+    <meta property="og:description" content="Unggah video HD anti pecah ke WhatsApp Status, TikTok, IG Reels/Story & YT Shorts. Privasi per perangkat. Dikembangkan oleh Rifky." />
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="JernihHD — Semua Video Jadi Jernih" />
+    <meta name="twitter:description" content="Unggah video HD anti pecah ke WhatsApp Status, TikTok, IG Reels/Story & YT Shorts. Privasi per perangkat. Dikembangkan oleh Rifky." />
+    <meta name="twitter:image" content="/og-image.png" />
+
+    <link rel="icon" href="/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" href="/splash.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <title>JernihHD — Semua Video Jadi Jernih</title>
+    <style>
+      html, body { background: #0e0a06; }
+      #boot { position: fixed; inset: 0; display: grid; place-items: center; background: #0e0a06; z-index: 99; }
+      #boot .b { width: 44px; height: 44px; border-radius: 14px; background: linear-gradient(135deg, #fbbf24, #fb923c 55%, #f43f5f); animation: bp 1.1s ease-in-out infinite; }
+      @keyframes bp { 0%,100% { transform: scale(0.86); opacity: 0.6 } 50% { transform: scale(1); opacity: 1 } }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="boot"><div class="b"></div></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // hilangkan boot placeholder begitu React mount
+      new MutationObserver(function (m, obs) {
+        if (document.querySelector('#root')?.children.length) {
+          document.getElementById('boot')?.remove();
+          obs.disconnect();
+        }
+      }).observe(document.getElementById('root'), { childList: true });
+    </script>
+  </body>
+</html>

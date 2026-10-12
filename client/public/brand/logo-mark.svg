@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- JernihHD "Ember" — app icon (oleh Rifky) -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a110a"/>
+      <stop offset="1" stop-color="#0e0a06"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="0.5" stop-color="#fb923c"/>
+      <stop offset="1" stop-color="#f43f5f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.52" r="0.5">
+      <stop offset="0" stop-color="#fb923c" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#fb923c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="shine" cx="0.34" cy="0.26" r="0.6">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="266" r="225" fill="url(#glow)"/>
+  <circle cx="256" cy="266" r="216" fill="none" stroke="#f43f5f" stroke-opacity="0.22" stroke-width="8"/>
+  <circle cx="256" cy="266" r="182" fill="none" stroke="#fb923c" stroke-opacity="0.3" stroke-width="10"/>
+  <circle cx="256" cy="266" r="148" fill="url(#core)"/>
+  <circle cx="256" cy="266" r="148" fill="url(#shine)"/>
+  <path d="M222 196 L222 336 L342 266 Z" fill="#ffffff" stroke="#ffffff" stroke-width="28" stroke-linejoin="round"/>
+</svg>

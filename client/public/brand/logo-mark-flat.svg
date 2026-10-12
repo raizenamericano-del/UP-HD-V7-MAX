@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- JernihHD "Ember" — flat/maskable (oleh Rifky) -->
+  <defs>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="0.5" stop-color="#fb923c"/>
+      <stop offset="1" stop-color="#f43f5f"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="#0e0a06"/>
+  <circle cx="256" cy="266" r="168" fill="url(#core)"/>
+  <path d="M216 182 L216 350 L356 266 Z" fill="#ffffff" stroke="#ffffff" stroke-width="30" stroke-linejoin="round"/>
+</svg>

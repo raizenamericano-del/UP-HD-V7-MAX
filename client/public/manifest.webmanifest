@@ -1,0 +1,37 @@
+{
+  "name": "JernihHD — Upload Jernih HD",
+  "short_name": "JernihHD",
+  "description": "Upload & kirim video HD anti pecah ke WhatsApp Status, TikTok, IG Reels/Story, dan YT Shorts. Oleh Rifky.",
+  "id": "/hdjir/",
+  "start_url": "/?src=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0e0a06",
+  "theme_color": "#0e0a06",
+  "categories": ["video", "utilities", "social", "multimedia"],
+  "lang": "id",
+  "dir": "ltr",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-1024.png", "sizes": "1024x1024", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/maskable-1024.png", "sizes": "1024x1024", "type": "image/png", "purpose": "maskable" }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Kirim Video",
+      "short_name": "Kirim",
+      "url": "/?page=send",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Koneksi WhatsApp",
+      "short_name": "Koneksi",
+      "url": "/?page=connect",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
